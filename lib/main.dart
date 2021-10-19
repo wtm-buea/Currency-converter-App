@@ -35,20 +35,22 @@ class _MyHomePageState extends State<MyHomePage> {
       body: ListView(
            children: [
              // adding the texts for issue #3
-             Column(
-                children: [
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Text('Exchange Rate', style: TextStyle(
-                    color: Colors.black38 ),),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Text('CFA 566.22', style: TextStyle(
-                    color: Colors.black87, fontWeight: FontWeight.bold,
-                  ),),
-                ],
+             Center(
+               child: Column(
+                  children: [
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Text('Exchange Rate', style: TextStyle(
+                      color: Colors.black38 ),),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text('CFA 566.22', style: TextStyle(
+                      color: Colors.black87, fontWeight: FontWeight.bold,
+                    ),),
+                  ],
+               ),
              ),
            ],
       ),
