@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dropdown.dart';
 
 void main() {
   runApp(MyApp());
@@ -58,8 +57,25 @@ DropdownButton<String> buildDropdownButton() {
          title: Text("Currency Converter App"),
       ),
       body: ListView(
-        children: [
-
+          children: [
+             // adding the texts for issue #3
+             Center(
+               child: Column(
+                  children: [
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Text('Exchange Rate', style: TextStyle(
+                      color: Colors.black38 ),),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text('CFA 566.22', style: TextStyle(
+                      color: Colors.black87, fontWeight: FontWeight.bold,
+                    ),),
+                  ],
+               ),
+             ),
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: Row(
@@ -77,9 +93,7 @@ DropdownButton<String> buildDropdownButton() {
               ]
             ),
           )
-        ],
-      ),
-   );
+     ] ));
   }
 }
   
