@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'getData.dart';
 
@@ -49,8 +50,7 @@ DropdownButton<String> buildDropdownButton() {
               }
             );
 }
- void getData() async{
-   var tmp = await CurrencyList().getData();
+ void getData() async{   var tmp = await CurrencyList().getData();
   
  }
  
@@ -81,6 +81,22 @@ DropdownButton<String> buildDropdownButton() {
                   ],
                ),
              ),
+
+             Padding(
+               padding: const EdgeInsets.all(20.0),
+               child: TextField(             
+                    decoration: InputDecoration(
+                //contentPadding: EdgeInsets.only(top: 3),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+            labelText: 'Answer',
+                  ),
+                  ),
+             ),
+             SizedBox(
+               height: 20,
+             ),
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: Row(
@@ -101,4 +117,3 @@ DropdownButton<String> buildDropdownButton() {
      ] ));
   }
 }
-  
