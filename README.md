@@ -24,7 +24,7 @@ samples, guidance on mobile development, and a full API reference.
   
 3. Navigate to the project directory 📁 .
 
-  *cd currency-converter-app*
+  *cd Currency-converter-App*
   
 4. Add a reference(remote) to the original repository to get all the changes from the remote.
 
