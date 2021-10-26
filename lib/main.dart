@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'getData.dart';
 
 void main() {
   runApp(MyApp());
@@ -48,10 +49,14 @@ DropdownButton<String> buildDropdownButton() {
               }
             );
 }
-
+ void getData() async{
+   var tmp = await CurrencyList().getData();
+  
+ }
  
   @override
   Widget build(BuildContext context) {
+    getData();
    return Scaffold(
       appBar: AppBar(
          title: Text("Currency Converter App"),
